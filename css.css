@@ -1,0 +1,64 @@
+
+
+.title{
+    font-family: 'Hiragino Kaku Gothic Pro', 'WenQuanYi Zen Hei', '微軟正黑體', '蘋果儷中黑', Helvetica, Arial, sans-serif;
+    color: #dc2d5e;    
+    font-family: 'Rouge Script', cursive; 
+    font-size: 60px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0 0 50px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34;
+}
+
+.caption{
+    color: #CEF0D4;
+    font-family: 'Rouge Script', cursive; 
+    font-stretch: condensed;
+    font-size: 40px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin: 0 0 0px; 
+    text-align: center; 
+    text-shadow: 1px 1px 2px #082b34;
+}
+.container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+}
+
+.image {
+    display: block;
+    width: 300px;
+    height: 500px;
+}
+
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #ff946bbd;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: black;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 0.3;
+}
